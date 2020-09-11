@@ -1,0 +1,15 @@
+Primeiramente obrigado por ta apoiando esse projeto!
+
+1- instale o python, já que o foco desse game é ser rodado no prompt de comando usando a linguagem ( python ), recomendo
+que já instale essa linguagem.
+
+2- quando tiver já o python em mãos, baixe o arquivo com nome do jogo!
+
+3- quando baixar o game, salve em uma pasta no desktop(area de trabalho) ou onde quiseres! 
+
+3- quando baixar o arquivo do game, entre no prompt de comando(não precisa ser como administrador) e use essa linha de
+comandos -> cd /c/user/nome_do_seu_user/desktop(caso esteja no desktop)/pasta_do_game_/
+
+4- quando estiver na pasta pelo prompt de comando(cmd), use o comando -> python jogo.py
+
+5- Se conseguiu chegar na etapa 5 parabéns, seu jogo já está rodando pelo cmd!

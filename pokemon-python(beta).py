@@ -114,6 +114,10 @@ if resposta_do_jogador2 == 1:
 				print(f"Seu pokemon atacou!\nO {pokemon_adversario1} sofreu 0 de dano e teve sua defesa reduzida!")
 				print(f"vida do {pokemon_adversario1}:{life_pokemon_adv}")
 
+			if (life_pokemon_adv <= 0):
+				print(f'{jogador} venceu a batalha! -40 de pokemoney foi retirado de {adversario}!')
+				break
+
 			print("O adversário vai atacar...")
 			#O oponente ataca
 			if (random_atack_adv == "tackle") or (random_atack_adv == "scratch"):
@@ -135,11 +139,7 @@ if resposta_do_jogador2 == 1:
 			elif (random_atack_adv == "growl"):
 				print(f'O {pokemon_adversario1} usou {random_atack_adv}!')
 				life_pokemon_user = (life_pokemon_user - 0)
-				print(f"O{pokemon_jogador} sofreu 0 de dano!")
-
-			if (life_pokemon_user <= 0):
-				print(f'{adversario} venceu a batalha! -40 de pokemoney foi retirado de {jogador}!')
-				break
+				print(f"O {pokemon_jogador} sofreu 0 de dano!")
 
 			if (life_pokemon_adv <= 0):
 				print(f'{jogador} venceu a batalha! +80 de pokemoney foi adicionado para {jogador}!')

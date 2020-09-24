@@ -52,7 +52,7 @@ elif pokemon == 3:
 	print ("Você escolheu o bulbassaur, boa!!")
 	print ("Level = 5")
 	print ("ataques do Bulbassaur:\n------------------\ntackle: normal type\npower: 40 \n------------------\ngrowl: normal type\npower: --\n ")
-	ataques = ["tackle", "growl"]
+	Ataques = ["tackle", "growl"]
 	pokemon_jogador = "Bulbassaur"
 	pokemon_adversario1 = "Charmander"
 	print(f'{adversario} escolheu {pokemon_adversario1}')

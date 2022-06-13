@@ -1,2 +1,2 @@
 # Pokemon-simulator
-Um simulador de pokemon para que você simule situações para suas futuras batalhas e monte sua equipe perfeita! (incomplete version alpha)
+Um simulador de pokemon para que você simule situações para suas futuras batalhas! Monte sua equipe perfeita! (incomplete version alpha)

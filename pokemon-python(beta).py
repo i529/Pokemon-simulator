@@ -1,5 +1,6 @@
 import sys
 import random
+import time
 
 
 
@@ -108,7 +109,7 @@ if resposta_do_jogador2 == 1:
 	
 	def batalha(pokemon_jogador, pokemon_adversario1):
 		
-		#variáveis de vida do pokemon do Usuário e do Bot(adversário)
+		#variáveis de vida do pokemon do Usuário e do pokemon do Bot(adversário)
 		
 		life_pokemon_user = 100
 		life_pokemon_adv = 100
@@ -141,9 +142,9 @@ if resposta_do_jogador2 == 1:
 				print(f"Seu pokemon atacou!\nO {pokemon_adversario1} sofreu 0 de dano e teve sua defesa reduzida!")
 				print(f"vida do {pokemon_adversario1}:{life_pokemon_adv}")
 
-			
 			if (life_pokemon_adv <= 0):
-				print(f'{jogador} venceu a batalha! -40 de pokemoney foi retirado de {adversario}!')
+				print("\n" * 130)
+				print(f'{jogador} venceu a batalha! +80 de pokemoney foi adicionado para {jogador}!')
 				break
 
 			print("O adversário vai atacar...")
@@ -170,11 +171,17 @@ if resposta_do_jogador2 == 1:
 				life_pokemon_user = (life_pokemon_user - 0)
 				print(f"O {pokemon_jogador} sofreu 0 de dano!")
 
-			if (life_pokemon_adv <= 0):
-				print(f'{jogador} venceu a batalha! +80 de pokemoney foi adicionado para {jogador}!')
+
+			if (life_pokemon_user <= 0):
+				print("\n" * 130)
+				print(f'{adversario} venceu a batalha! -40 de pokemoney foi retirado de {jogador}!')
 				break
 
 	batalha(pokemon_jogador,pokemon_adversario1)
 elif resposta_do_jogador2 == 2:
-	sys.exit()
+	print('Finalizando o jogo.')
+	time.sleep(4)
+
+print("Jogo finalizando, fechando o jogo! Obrigado por jogar!")
+time.sleep(4)
 
